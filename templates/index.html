@@ -10,6 +10,10 @@
         </style>
     </head>
     <body>
-        <h1>Hello world</h1>
+        <h1>Emotion detection</h1>
+        <form method="post" action="/predict" enctype="multipart/form-data">
+            <input name="input_image" type="file" accept="image"/>
+            <button type="submit">Submit</button>
+        </form>
     </body>
 </html>
