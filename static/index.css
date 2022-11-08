@@ -1,0 +1,18 @@
+html {
+    color-scheme: dark;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.image {
+    width: 1000px;
+    height: 600px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

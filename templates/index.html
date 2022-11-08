@@ -3,11 +3,7 @@
     <head>
         <meta charset="utf8"/>
         <title>Emotion detection</title>
-        <style>
-            html {
-                color-scheme: dark;
-            }
-        </style>
+        <link rel="stylesheet" href="/static/index.css">
     </head>
     <body>
         <h1>Emotion detection</h1>
@@ -15,5 +11,11 @@
             <input name="input_image" type="file" accept="image"/>
             <button type="submit">Submit</button>
         </form>
+
+        <div id="wrapper">
+            <div class="image" id="input"></div>
+            <div class="image" id="output"></div>
+        </div>
+        <script src="/static/index.js"></script>
     </body>
 </html>
