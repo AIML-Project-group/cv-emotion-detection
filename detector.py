@@ -28,6 +28,6 @@ def predict(file_path):
         prediction = model.predict(cropped_image)
 
         max_index = int(np.argmax(prediction))
-        cv2.putText(img, emotion_dict[max_index], (x + 50, y + h - 20), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 1, cv2.LINE_AA)
+        cv2.putText(img, emotion_dict[max_index], (x, y + h - 20), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 3, cv2.LINE_AA)
 
     return img
