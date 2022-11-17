@@ -16,3 +16,30 @@ html {
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+#output {
+    position: relative;
+}
+
+#output.loading {
+    background-image: none !important;
+}
+
+#output.loading:after {
+    content: '';
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid violet;
+    border-left-color: transparent;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotating 1s infinite ease-in-out;
+}
+
+@keyframes rotating {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
