@@ -11,7 +11,7 @@ def home():
 @app.route('/predict', methods=['POST'])
 def predictRoute():
     img = request.files.get('input_image')
-    file_name = f'uploads/{img.name}'
+    file_name = f'tmp/{img.name}'
 
     img.save(file_name)
 
