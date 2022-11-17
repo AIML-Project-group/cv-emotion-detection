@@ -3,6 +3,8 @@
         const form = this.document.forms[0]
         const imageInput = form.querySelector('input')
         const output = document.querySelector('#output')
+        const sidebar = document.querySelector('aside')
+        const toggler = sidebar.querySelector('button')
 
         // https://medium.com/@codefoxx/how-to-upload-and-preview-an-image-with-javascript-749b92711b91
         imageInput.addEventListener('change', function () {
@@ -34,5 +36,9 @@
                     output.classList.remove('loading')
                 })
         }
+
+        toggler.addEventListener('click', () => {
+            sidebar.classList.toggle('closed')
+        })
     })
 }) ()

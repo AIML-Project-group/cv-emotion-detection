@@ -43,3 +43,42 @@ html {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
+
+aside {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 0 .8em;
+    background: #222;
+    width: 250px;
+    transition: all 500ms;
+    font-size: 1.2em;
+}
+
+aside section {
+    padding-left: .5em;
+}
+
+aside.closed {
+    width: 0;
+}
+aside.closed section {
+    display: none;
+    overflow: hidden;
+}
+
+aside button {
+    position: absolute;
+    left: -1.5em;
+    background: #222;
+    padding: .6em;
+    border-radius: 50%;
+    font-size: 1.5em;
+    cursor: pointer;
+    border: none;
+}
